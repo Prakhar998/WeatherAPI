@@ -24,14 +24,14 @@ app.set('view engine', 'hbs');
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'DM'
+        name: 'Prakhar'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        name: 'DM',
+        name: 'Prakhar',
         message: 'Hope this works at the time you\'re using it :P'
     })
 });
@@ -39,7 +39,7 @@ app.get('/help', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'DM'
+        name: 'Prakhar'
     })
 })
 
@@ -47,7 +47,7 @@ app.get('/weather', (req, res) => {
     const location = req.query.address;
     const jsonData = {
         title: 'Weather',
-        name: 'DM',
+        name: 'Prakhar',
         location
     };
 
@@ -89,7 +89,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         message: 'Something went wrong with the page you are looking for',
         title: '404',
-        name: 'DM'
+        name: 'Prakhar'
     });
 })
 
